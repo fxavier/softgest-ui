@@ -6,6 +6,11 @@ import { BlankComponent } from './pages/blank/blank.component';
 import { SearchComponent } from './pages/search/search.component';
 import { NotFoundComponent } from './pages/errors/not-found/not-found.component';
 import { ErrorComponent } from './pages/errors/error/error.component';
+import { SubcategoriasComponent } from './pages/artigos/subcategorias/subcategorias.component';
+import { ProdutosComponent } from './pages/artigos/produtos/produtos.component';
+import { CategoriasCadastroComponent } from './pages/artigos/categorias/categorias-cadastro/categorias-cadastro.component';
+import { CategoriasPesquisaComponent } from './pages/artigos/categorias/categorias-pesquisa/categorias-pesquisa.component';
+
 
 export const routes: Routes = [
     { 
@@ -26,7 +31,16 @@ export const routes: Routes = [
             { path: 'icons', loadChildren: './pages/icons/icons.module#IconsModule', data: { breadcrumb: 'Material Icons' } },
             { path: 'blank', component: BlankComponent, data: { breadcrumb: 'Blank page' } },
             { path: 'search', component: SearchComponent, data: { breadcrumb: 'Search' } },
-            { path: 'search/:name', component: SearchComponent, data: { breadcrumb: 'Search' } }
+            { path: 'search/:name', component: SearchComponent, data: { breadcrumb: 'Search' } },
+            { path: 'categorias/nova', component: CategoriasCadastroComponent, data: { breadcrumb: 'Nova Categoria'} },
+            { path: 'categorias', component: CategoriasPesquisaComponent, data: { breadcrumb: 'Listar Categorias '}}
+          /*   { path: 'categorias', component: CategoriasComponent, data: { breadcrumb: 'Categorias'} },
+            { path: 'categorias/nova', component: CategoriasCadastroComponent, data: { breadcrumb: 'Nova Categoria'} },
+            { path: 'subcategorias', component: SubcategoriasComponent, data: { breadcrumb: 'Subcategorias'} },
+            { path: 'produtos', component: ProdutosComponent, data: { breadcrumb: 'Produtos'} } */
+            
+         
+            
         ]
     },
     { path: 'landing', loadChildren: './pages/landing/landing.module#LandingModule' },

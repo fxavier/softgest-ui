@@ -3,7 +3,6 @@ import { Menu } from './menu.model';
 export const verticalMenuItems = [ 
     new Menu (1, 'Dashboard', '/', null, 'dashboard', null, false, 0),
     new Menu (2, 'Users', '/users', null, 'supervisor_account', null, false, 0), 
-    new Menu (3, 'UI Features', null, null, 'computer', null, true, 0),   
     new Menu (4, 'Buttons', '/ui/buttons', null, 'keyboard', null, false, 3),  
     new Menu (5, 'Cards', '/ui/cards', null, 'card_membership', null, false, 3), 
     new Menu (6, 'Lists', '/ui/lists', null, 'list', null, false, 3), 
@@ -59,13 +58,21 @@ export const verticalMenuItems = [
     new Menu (142, 'Level 3', null, null, 'folder_open', null, true, 141),
     new Menu (143, 'Level 4', null, null, 'folder_open', null, true, 142),
     new Menu (144, 'Level 5', null, 'http://themeseason.com', 'link', null, false, 143),
-    new Menu (200, 'External Link', null, 'http://themeseason.com', 'open_in_new', '_blank', false, 0)
+    new Menu (200, 'External Link', null, 'http://themeseason.com', 'open_in_new', '_blank', false, 0),
+    new Menu (201, 'Artigos', null, null, 'view_module', null, true, 0),
+    new Menu (202, 'Categorias', null, null, 'view_module', null, true, 201),
+    new Menu (203, 'Nova Categoria', '/categorias/nova', null, 'work', null, false, 202),
+    new Menu (204, 'Listar Categorias', '/categorias', null, 'view_list', null, false, 202)
+   /*  new Menu (202, 'Categorias', '/categorias', null, 'folder_open', null, false, 201),
+    new Menu (203, 'Subcategorias', '/subcategorias', null, 'folder_open', null, false, 201),
+    new Menu (204, 'Produtos', '/produtos', null, 'store', null, false, 201),
+    new Menu (205, 'Nova Categoria', '/categorias/nova', null, 'work', null, false, 201) */
+   
 ]
 
 export const horizontalMenuItems = [ 
     new Menu (1, 'Dashboard', '/', null, 'dashboard', null, false, 0),
     new Menu (2, 'Users', '/users', null, 'supervisor_account', null, false, 0), 
-    new Menu (3, 'UI Features', null, null, 'computer', null, true, 0),   
     new Menu (4, 'Buttons', '/ui/buttons', null, 'keyboard', null, false, 3),  
     new Menu (5, 'Cards', '/ui/cards', null, 'card_membership', null, false, 3), 
     new Menu (6, 'Lists', '/ui/lists', null, 'list', null, false, 3), 
@@ -112,8 +119,6 @@ export const horizontalMenuItems = [
     new Menu (48, 'Search', '/search', null, 'search', null, false, 40),
     new Menu (49, 'Landing', '/landing', null, 'filter', null, false, 40),
     new Menu (50, 'Schedule', '/schedule', null, 'event_note', null, false, 40),
-    new Menu (200, 'External Link', null, 'http://themeseason.com', 'open_in_new', '_blank', false, 40),
-    new Menu (66, 'Maps', null, null, 'map', null, true, 0),
-    new Menu (67, 'Google', '/maps/googlemaps', null, 'location_on', null, false, 66),
-    new Menu (68, 'Leaflet', '/maps/leafletmaps', null, 'my_location', null, false, 66),
+    new Menu (200, 'External Link', null, 'http://themeseason.com', 'open_in_new', '_blank', false, 40)
+    
 ]

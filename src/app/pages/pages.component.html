@@ -8,7 +8,7 @@
                 <div fxLayout="row" fxLayoutAlign="center center">               
                     <a routerLink="/" fxLayout="row" fxLayoutAlign="start center" class="logo" ngClass.xs="mobile" (click)="closeSubMenus()">
                         <img src="assets/img/logo.png" alt="logo" [@rotate]="showSidenav">
-                        <span class="mx-2">ANNULAR</span> 
+                        <span class="mx-2">SOFTGEST</span> 
                     </a>
                 </div> 
                 <div fxLayout="row" fxLayoutAlign="start center" class="w-100"> 
@@ -29,7 +29,7 @@
                 <div fxLayout="row" fxLayoutAlign="end center">
                     <div fxLayout="row" fxLayoutAlign="start center" fxShow="false" fxShow.gt-xs class="search-bar">
                         <form method="get">
-                            <input type="text" placeholder="Type to search..." class="mat-elevation-z3"  [class.show]="toggleSearchBar">
+                            <input type="text" placeholder="Digita para pesquisar..." class="mat-elevation-z3"  [class.show]="toggleSearchBar">
                             <button mat-icon-button (click)="toggleSearchBar = !toggleSearchBar" type="button">
                                 <mat-icon>search</mat-icon>
                             </button> 
@@ -51,7 +51,7 @@
             <mat-toolbar *ngIf="settings.fixedSidenav" class="top-toolbar">
                 <a routerLink="/" fxLayout="row" fxLayoutAlign="start center" class="logo">
                     <img src="assets/img/logo.png" alt="logo" [@rotate]="showSidenav">
-                    <span class="mx-2">ANNULAR</span> 
+                    <span class="mx-2">SOFTGEST</span> 
                 </a>
             </mat-toolbar>            
             <app-sidenav></app-sidenav>
@@ -150,9 +150,9 @@
         <mat-icon>arrow_upward</mat-icon>
     </div>
 
-    <mat-toolbar color="primary" class="footer" [class.full-width]="!showSidenav">
+   <!--  <mat-toolbar color="primary" class="footer" [class.full-width]="!showSidenav">
         <a mat-raised-button color="accent" href="https://themeforest.net/item/annular-angular-material-design-admin-template/22537089" target="_blank">
             <mat-icon class="mx-2">shopping_cart</mat-icon>Purchase ANNULAR
         </a>
-    </mat-toolbar>
+    </mat-toolbar> -->
 </div>

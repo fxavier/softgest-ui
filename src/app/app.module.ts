@@ -37,6 +37,15 @@ import { ApplicationsComponent } from './theme/components/applications/applicati
 import { MessagesComponent } from './theme/components/messages/messages.component';
 import { UserMenuComponent } from './theme/components/user-menu/user-menu.component';
 import { FavoritesComponent } from './theme/components/favorites/favorites.component';
+import { SubcategoriasComponent } from './pages/artigos/subcategorias/subcategorias.component';
+import { ProdutosComponent } from './pages/artigos/produtos/produtos.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CategoriasPesquisaComponent } from './pages/artigos/categorias/categorias-pesquisa/categorias-pesquisa.component';
+import { CategoriasCadastroComponent } from './pages/artigos/categorias/categorias-cadastro/categorias-cadastro.component';
+
+
+
+
 
 
 @NgModule({
@@ -52,7 +61,8 @@ import { FavoritesComponent } from './theme/components/favorites/favorites.compo
     CalendarModule.forRoot(),
     SharedModule,
     PipesModule,
-    routing
+    routing,
+    HttpClientModule
   ],
   declarations: [
     AppComponent,
@@ -70,7 +80,11 @@ import { FavoritesComponent } from './theme/components/favorites/favorites.compo
     ApplicationsComponent,
     MessagesComponent,
     UserMenuComponent,
-    FavoritesComponent
+    FavoritesComponent,
+    SubcategoriasComponent,
+    ProdutosComponent,
+    CategoriasCadastroComponent,
+    CategoriasPesquisaComponent
   ],
   providers: [
     AppSettings,
